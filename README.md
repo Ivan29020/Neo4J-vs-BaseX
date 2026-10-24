@@ -1,2 +1,6 @@
 # Neo4J-vs-BaseX
-Comparative Performance Analysis of Neo4j and BaseX for Banking Fraud Detection
+This project investigates the performance of two NoSQL database management systems, Neo4j and BaseX, in the context of banking fraud detection, with a particular focus on account takeover attacks and suspicious financial activity. The study models relationships between users, bank accounts, devices, IP addresses, and financial transactions to explore how database technologies can support the identification of potentially fraudulent behavior.
+
+Using Python, synthetic datasets of increasing sizes are generated and loaded into both database systems. Four queries of progressively increasing complexity are implemented to evaluate their ability to retrieve, correlate, and analyze data. Query execution times are measured across multiple runs, distinguishing initial execution latency from average performance in subsequent executions. The results are then visualized and compared to assess how dataset size and query complexity affect response times and scalability.
+
+The findings highlight the strengths and limitations of each approach, demonstrating the advantages of graph-based data modeling for queries involving complex relationships. In the tested scenarios, Neo4j generally achieves better performance during repeated query executions, while BaseX exhibits lower initial execution times. The project ultimately provides an experimental assessment of the suitability of graph databases and XML-native databases for relationship-intensive fraud detection workloads.
